@@ -1,6 +1,12 @@
-// tuple
-// we want to represent two values 1, 'Mosh'
-let user: [number, string] = [1, 'Mosh']
-// due to mthis array being a fixed a lenght array an extar variable cannot be added
-// the variable passed has to be in order
-// the follow the pattern in which the variable was initialized 
+// type enum
+// if we want to represent size of tee shirts
+// we could represent it like 
+// const small = 1;
+// const mediun = 2;
+// const large = 3;
+
+// we could use enum
+// Pascalcase
+const enum Size {Small = 1, Medium, Large};
+let mySize: Size = Size.Medium;
+console.log(mySize)
