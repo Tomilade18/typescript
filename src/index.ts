@@ -1,16 +1,6 @@
-//arrays
-//let numbers = [1, 2, 3];
-// the any array
-// let numbers = [];
-// numbers[0] = 1;
-// numbers[1] = "1";
-// if you want to use an empty array you ahve to specify
-//the array type 
-
-
-
-// benefit of using typescript
-// intellesense or code completion
-// bbecause our editor know the type of end it offer code completion
-let numbers: number[] = [];
-numbers.forEach(n => n.)
+// tuple
+// we want to represent two values 1, 'Mosh'
+let user: [number, string] = [1, 'Mosh']
+// due to mthis array being a fixed a lenght array an extar variable cannot be added
+// the variable passed has to be in order
+// the follow the pattern in which the variable was initialized 
