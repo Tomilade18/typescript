@@ -1,12 +1,9 @@
-// type enum
-// if we want to represent size of tee shirts
-// we could represent it like 
-// const small = 1;
-// const mediun = 2;
-// const large = 3;
+// functions
 
-// we could use enum
-// Pascalcase
-const enum Size {Small = 1, Medium, Large};
-let mySize: Size = Size.Medium;
-console.log(mySize)
+function calculateTax(income: number, taxYear = 2022): number {
+    if (taxYear < 2022) 
+    return income * 1.2;
+    return income * 1.3;
+}
+
+calculateTax(10_000);
