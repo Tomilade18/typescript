@@ -1,15 +1,5 @@
-// interscetion types
-type Draggable = {
-   drag: () => void
-}
-type Resizable = {
-   resize: () => void
-}
+//literal types
+type Quantity = 50 | 100;
+let quantity: Quantity  = 100;
 
-type UIwidget = Draggable & Resizable;
-
-
-let textBox: UIwidget = {
-    drag: () => {},
-    resize: () => {}
-}
+type Metric = 'cm' | 'inch';
