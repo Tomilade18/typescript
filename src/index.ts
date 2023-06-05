@@ -1,17 +1,11 @@
-// objects
-//how to define a methiod in this object
-//every object should have a return method
-type Employee = {
-  readonly id: number,
-    name: string,
-    retire: (date: Date) => void
-} 
+// union type
+function kgToLbs(weight: number | string): number {
+   //narrowing
+   if (typeof weight === 'number' ) 
+   return weight * 2.2
+    else
+    return parseInt(weight) * 2.2
+}
 
-let employee: Employee = {
-    id: 1,
-     name: 'tomi',
-    retire: (date: Date) => {
-console.log(date);
-    }
-    };
-
+kgToLbs(10);
+kgToLbs('10');
