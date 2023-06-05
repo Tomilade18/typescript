@@ -1,7 +1,15 @@
 // objects
+//how to define a methiod in this object
+//every object should have a return method
 let employee: {
-    id: number,
-    name: string
-} = {id: 1, name: 'tomi' };
+  readonly id: number,
+    name: string,
+    retire: (date: Date) => void
+    
+} = {id: 1,
+     name: 'tomi',
+    retire: (date: Date) => {
+console.log(date);
+    }
+   };
 
-employee.name = 'mosh'
